@@ -5,6 +5,7 @@ from products.models import Product
 
 import json
 import time
+import stripe
 
 class StripeWH_Handler:
     """
@@ -40,10 +41,10 @@ class StripeWH_Handler:
 
         billing_details = stripe_charge.billing_details # updated
         shipping_details = intent.shipping
-        grand_total = round(stripe_charges.amount / 100, 2) # updated
+        grand_total = round(stripe_charge.amount / 100, 2) # updated
 
-        # Clean data in the shopping details
-        for field, value in shopping_details.address.items():
+        # Clean data in the shipping details
+        for field, value in shipping_details.address.items():
             if value == '':
                 shipping_details.address[field] = None
 
