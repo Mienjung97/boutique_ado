@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-mienjung97-boutiqueado-x3soyz4b2ia.ws.codeinstitute-ide.net',
-    'boutique-ado-mj-102bd7708d45.herokuapp.com/',
+    'https://boutique-ado-mj-102bd7708d45.herokuapp.com/',
     ]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-mienjung97-boutiqueado-x3soyz4b2ia.ws.codeinstitute-ide.net']
