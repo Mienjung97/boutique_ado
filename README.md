@@ -1,3 +1,45 @@
+Deploying your app to heroku - Open your workspace and from the terminal.
+​﻿
+﻿1. Login to heroku and enter your details.
+﻿command: heroku login -i
+​﻿
+﻿When asked for your password, you'll need to enter your api-key instead of your password..
+​﻿
+﻿1. Click on Account Settings (under the avatar menu)
+2. Scroll down to the API Key section and click Reveal. Copy the key.
+﻿4. Complete the steps above, if you see an input box at the top middle of the editor...
+﻿ a. enter your heroku username
+﻿ b. enter the api key you just copied
+​﻿
+﻿2. Get your app name from heroku.
+﻿command: heroku apps
+​﻿
+﻿3. Set the heroku remote. (Replace <app_name> with your actual app name and remove the <> characters)
+﻿command: ﻿heroku git:remote -a <app_name>
+​﻿
+﻿4. Add, commit and push to github
+﻿command: git add . && git commit -m "Deploy to Heroku via CLI"
+​﻿
+﻿5. Push to both github and heroku
+﻿command: git push origin main
+﻿command: git push heroku main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Sebastian Kefer,
